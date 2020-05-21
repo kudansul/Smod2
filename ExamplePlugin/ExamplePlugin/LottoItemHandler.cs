@@ -28,7 +28,8 @@ namespace ExamplePlugin
 				// Chance of instantly dying
 				if (luckyValue < plugin.killChance)
 				{
-					ev.Player.Kill();
+					player.PersonalBroadcast(5, "no!",false)
+					//ev.Player.Kill();
 				}
 				else
 				{
